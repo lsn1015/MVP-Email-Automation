@@ -1,0 +1,5 @@
+# Python 版本 / Python Version
+Python >= 3.8
+
+# 依赖 / Dependencies
+pandas>=2.0.0

@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <!-- ==========================================
+       邮件模板 - 可自定义模块化设计
+       ========================================== -->
+  <title>Email Template</title>
+</head>
+
+<body style="font-family: Calibri, Arial, sans-serif; font-size:14px; line-height:1.6; color:#000;">
+
+<!-- ==========================================
+     第一部分：开场白 - {name} 为收件人姓名占位符
+     ========================================== -->
+  <p>Dear {name},</p>
+
+  <p>I hope you are doing well.</p>
+
+<!-- ==========================================
+     第二部分：正文内容 - 根据业务修改
+     ========================================== -->
+  <!-- TODO: 修改为公司介绍 -->
+  <p>
+    I would like to introduce [Your Company Name]'s product
+  </p>
+
+  <!-- TODO: 修改产品亮点 -->
+  <p><strong>Key highlights:</strong></p>
+  <ul>
+    <li>Advanced ...</li>
+    <li>Strict quality inspection...</li>
+    <li>Large production capacity ...</li>
+    <li>Experienced ...</li>
+  </ul>
+
+  <!-- TODO: 修改核心价值 -->
+  <p>
+    We are committed to ...
+  </p>
+
+  <!-- TODO: 修改行动号召 -->
+  <p>Should you be interested, we can also arrange a virtual or on-site tour of our production facility.</p>
+
+  <p>Best regards,</p>
+
+<!-- ==========================================
+     第三部分：公司Banner图片
+     ========================================== -->
+  <!-- TODO: 替换为公司Banner图片URL -->
+  <img src="YOUR_BANNER_IMAGE_URL" style="width:100%; max-width:650px; display:block; margin-top:20px;">
+
+<!-- ==========================================
+     第四部分：签名栏
+     ========================================== -->
+  <table cellpadding="0" cellspacing="0" style="font-family: 'Calibri', Candara, Segoe UI, Optima, Arial, sans-serif; font-size: 13px; color: #000066; line-height: 1.5; border-collapse: collapse; min-width: 600px;">
+
+    <!-- 左侧：Logo + 姓名职位 -->
+    <tr>
+      <td valign="top" style="padding-right: 25px; border-right: 2px solid #000066; width: 160px; text-align: center;">
+
+        <!-- TODO: 替换为公司Logo图片URL -->
+        <img src="YOUR_LOGO_IMAGE_URL" alt="COMPANY_NAME" style="display: block; width: 160px; margin-bottom: 15px;">
+
+        <div style="margin-top: 10px; line-height: 1.2;">
+          <!-- TODO: 修改姓名 -->
+          <strong style="font-size: 16px; color: #000066;">Your Name</strong><br>
+          <!-- TODO: 修改职位 -->
+          <span style="color: #000066; font-size: 13px;">Your Title</span>
+        </div>
+
+      </td>
+
+      <!-- 右侧：联系方式 -->
+      <td valign="top" style="padding-left: 20px;">
+        <table cellpadding="0" cellspacing="0" style="font-family: 'Calibri', sans-serif; font-size: 13px; color: #000066;">
+
+          <tr>
+            <!-- TODO: 修改邮箱 -->
+            <td>Email: <a href="mailto:your@email.com" style="color: #000066; text-decoration: underline;">your@email.com</a></td>
+          </tr>
+
+          <tr>
+            <!-- TODO: 修改电话/WhatsApp -->
+            <td>Whatsapp/Tel: +86 xxx xxxx xxxx</td>
+          </tr>
+
+          <tr><td>&nbsp;</td></tr>
+
+          <tr>
+            <!-- TODO: 修改公司名称 -->
+            <td><strong style="font-size: 14px;">Company Name Co., Ltd.</strong></td>
+          </tr>
+
+          <tr>
+            <!-- TODO: 修改办公地址 -->
+            <td>Your Office Address,</td>
+          </tr>
+
+          <tr>
+            <td>City, Country.</td>
+          </tr>
+
+          <tr>
+            <!-- TODO: 修改公司电话和网站 -->
+            <td>(+86) xxx xxxx xxxx | <a href="https://www.yourwebsite.com" style="color: #000066; text-decoration: none;">www.yourwebsite.com</a></td>
+          </tr>
+
+        </table>
+      </td>
+    </tr>
+
+    <!-- 工厂信息 + 图片 -->
+    <tr>
+      <td colspan="2" style="padding-top: 15px;">
+
+        <!-- TODO: 修改工厂地址 -->
+        <p style="margin: 0; font-size: 12px; color: #000066;">
+          <strong style="color: #000066;">Factory:</strong> Your Factory Address
+        </p>
+
+        <div style="margin-top: 10px;">
+          <!-- TODO: 替换为工厂图片URL -->
+          <img src="YOUR_FACTORY_IMAGE_URL" alt="Company Building" style="display: block; width: 100%; max-width: 650px; border: 0;">
+        </div>
+
+        <!-- 环保提示（可选） -->
+        <div style="margin-top: 15px; color: #008000; font-size: 11px; font-family: 'Calibri', sans-serif;">
+          <span>Save a tree. Don't print this e-mail unless it's really necessary.</span>
+        </div>
+
+      </td>
+    </tr>
+
+  </table>
+
+</body>
+</html>
