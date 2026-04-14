@@ -1,6 +1,6 @@
 # MVP Email Automation
 
-最小化外贸开发信自动化工具 / Minimal B2B Cold Email Automation Tool
+最小化外贸开发信自动化工具 / Minimal Cold Email Automation Tool
 
 ---
 
