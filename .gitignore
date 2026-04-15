@@ -19,4 +19,4 @@ venv/
 
 futong_cookies.json
 customers.csv
-.env
+.envconfig/email_config.py
