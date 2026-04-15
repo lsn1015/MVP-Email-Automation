@@ -242,6 +242,51 @@ A: 修改 `main.py` 中的 `time.sleep(20)`，单位为秒。
                                                                                                                                                         
   - 3个月内将开发信回复率提升至 5-10%                                                                                                                   
   - 节省 50% 的邮件撰写时间                                                                                                                             
-  - 建立可复用的邮件模板库      
+- 建立可复用的邮件模板库
 
-🌞
+---
+
+## 更新日志 / Changelog
+
+### v1.1.0 (2026-04-15)
+
+**重构项目结构，优化代码组织**
+
+- 拆分 config/ 目录：邮件配置、SMTP 配置独立管理
+- 拆分 core/ 目录：邮件发送器、模板管理器
+- 拆分 tools/ 目录：联系人加载器、报告生成器
+- main.py 从 332 行精简至 ~145 行，职责更清晰
+
+**新增功能**
+
+- 日志记录发送邮件状态（成功/失败），并生成报告
+- 成功联系人记录：`logs/success_contacts_YYYYMMDD_HHMMSS.csv`
+- 每日日志记录：`logs/all_emails_YYYYMMDD.log`
+- 报告文件包含成功率、耗时等详细统计
+
+**文件结构**
+
+```
+mvp-email-automation/
+├── config/
+│   ├── __init__.py
+│   ├── email_config.py      # 邮箱账号、密码、主题
+│   └── smtp_config.py       # SMTP 服务器配置
+├── core/
+│   ├── __init__.py
+│   ├── sender.py            # 邮件发送核心
+│   └── template.py          # 模板加载和渲染
+├── tools/
+│   ├── __init__.py
+│   ├── contact_loader.py    # 读取联系人
+│   └── report_generator.py  # 生成发送报告
+├── logs/                    # 日志目录
+├── data/
+│   └── client_info.csv     # 联系人数据
+├── main.py                 # 主入口
+└── requirements.txt
+```
+
+### v1.0.0 (2026-04-13)
+
+- 初始版本，邮件批量发送功能
