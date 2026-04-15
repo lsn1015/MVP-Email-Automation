@@ -3,7 +3,7 @@
 """
 
 EMAIL_CONFIG = {
-    "address": "sunny@kingtonoptic.com",
-    "password": "wiqpLQPMP2XNPPaG",
-    "subject": "Kington's MTP/MPO Fiber Cable Production Facility",
+    "address": os.getenv("EMAIL_ADDRESS", "your@email.com"),                                                                                          
+    "password": os.getenv("EMAIL_PASSWORD", ""),                                                                                                      
+    "subject": "...", 
 }
